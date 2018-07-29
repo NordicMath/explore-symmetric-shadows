@@ -20,6 +20,25 @@ We begin by defining the central concepts of symmetric shadows and some terminol
   \end{enumerate}
 \end{definition}
 
+\begin{propdef}
+  Given a symmetric shadow $\Gamma = (R, k, \upsilon)$ we may define a $\lambda$-homomorphism $f_\Gamma : R \to \Upsilon_k$ by $f_\Gamma(z) : n \mapsto \upsilon(\psi^n(z))$, where $\psi^n$ is the $n$-th Adams operation. 
+\end{propdef}
+
+\begin{propdef}
+  Given a $\lambda$-homomorphism $f : R \to \Upsilon_k$ we may define a symmetric shadow $\Gamma_f = (R, k, \upsilon_k \circ f$.
+\end{propdef}
+
+%TODO: Categorify, and write about "and even naturally" 
+\begin{theorem}
+  These two notions commute, in that for any $\lambda$-homomorphism $f : R \to \Upsilon_k$, we have $f_{\Gamma_f} = f$ and for any symmetric shadow $\Gamma$ we have $\Gamma_{f_\Gamma} = \Gamma$. informally, this means that a zeta type formula is essentially (and even naturally, as we will see later) the same thing as a symmetric shadow.
+\end{theorem}
+
+\begin{proof}
+  We begin with $\Gamma_{f_\Gamma} = \Gamma$. Say $\Gamma$ has the umbra $\upsilon$. It is simple to show that $\upsilon_k \circ f_\Gamma = \upsilon$, as $\upsilon_k(f_\Gamma(z)) = \upsilon_k(n \mapsto \upsilon(\psi^n(z))) = \upsilon(\psi^1(z)) = \upsilon(z)$. 
+  
+  For the first part, given a formula $f$, we want to show $f_{\Gamma_f} = f$. We begin by expanding the left hand side into $f_{\Gamma_f}(z) : n \mapsto \upsilon_k(f(\psi^n(z)))$, which must equal $f(z)$ for all $z$. By $f$ being a homomorphism, we can rewrite to $n \mapsto \upsilon_k(\psi^n(f(z)))$. Now notice that in $\Upsilon_k$, it holds that $\upsilon_k(\psi^n(l \mapsto a_l)) = \upsilon_k(l \mapsto a_{ln}) = a_n$. As such, we get $n \mapsto \upsilon_k(\psi^n(f(z))) = f(z)$.
+\end{proof}
+
 \subsection{Morphisms of Symmetric Shadows}
 The notion of $f_\Gamma$ can be slightly cleaned up by defining morphisms between symmetric shadows. We also establish some more terminology, and reintroduce $\Upsilon_k$ as a symmetric shadow itself. 
 
