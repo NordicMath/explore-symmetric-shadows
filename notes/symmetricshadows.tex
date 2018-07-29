@@ -102,6 +102,22 @@ An ideal situation for zeta type formulas is that they should be faithful, ie. d
   (2) and (3) are trivially equvialent. (2) is equivalent to the kernel of the symmetric part of $\Psi_\Gamma$ being trivial, which is again equivalent to injectivity of the symmetric part of $\Psi_\Gamma$, which finally is equivalent to injectivity of $\Psi_\Gamma$. 
 \end{proof}
 
+\begin{proposition}
+  We make some observations on the nebula of $\Gamma = (R, k, \upsilon)$:
+  \begin{enumerate}
+    \item We have $N(\Gamma) \subseteq \ker \upsilon$. 
+    \item $N(\Gamma)$ is the largest sub-ideal of $\ker \upsilon$ that is a $\lambda$-ideal. \todo{more precise notion of large}
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+  We prove these one by one.
+  \begin{enumerate}
+    \item It is clear that if $x \in N(\Gamma)$ then $\upsilon(\psi^1(x)) = 0$ and $x \in \ker \upsilon$.
+    \item Notice that any element $x \in \ker \upsilon$ such that $\lambda^n(x) \notin \ker \upsilon$ with $n \ge 1$ would have a non-zero $\lambda$-shadow and hence not be in the nebula by definition, as all $\psi$-shadows must be zero. Similarly, if $\lambda^n(x) \in \ker \upsilon$ for all $n \ge 1$, then the $\lambda$-shadows are all zero, which imply that the $\psi$-shadows must likewise be zero. This reasoning \todo{Check this properly} uses \ref{prop:naturalCommutativity}.
+  \end{enumerate}
+\end{proof}
+
 \subsection{The Image of a Symmetric Shadow}
 An interesting question about zeta type formulas is what kind of zeta types they give rise to. This is encapsulated in the image of a symmetric shadow. We define this concept, and make some basic observations.
 
