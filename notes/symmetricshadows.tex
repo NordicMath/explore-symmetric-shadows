@@ -43,6 +43,21 @@ We begin by defining the central concepts of symmetric shadows and some terminol
 The notion of $f_\Gamma$ can be slightly cleaned up by defining morphisms between symmetric shadows. We also establish some more terminology, and reintroduce $\Upsilon_k$ as a symmetric shadow itself. 
 
 
+\begin{definition}
+  We define a morphism of symmetric shadows from $(R, k, \upsilon)$ to $(R', k', \upsilon')$ as a pair $(f, g)$ with $f : R \to R'$ a $\lambda$-ring homomorphism and $g : k \to k'$ a ring-homomorphism such that $\upsilon'(f(x)) = g(\upsilon(x))$. 
+  \begin{enumerate}
+    \item A morphism of symmetric shadows may be called an \emph{umbral morphism}. 
+    \item Further, given a pair $(f, g)$, we call $f$ the \emph{symmetry part} and $g$ the \emph{shadow part}. 
+    \item When the shadow part is the identity-morphism, we call the morphism \emph{anchored} (to $k$). 
+    \item Composition of umbral morphisms is given by composition partwise. 
+    \item A morphism is \emph{injective} when both parts are also injective. Notice however that morphisms of fields are always injective, so the symmetry part is suffient.
+  \end{enumerate}
+\end{definition}
+
+\begin{remark}
+  The category of symmetric shadows is clearly a comma-category
+\end{remark}
+
 \subsection{The Nebula}
 An ideal situation for zeta type formulas is that they should be faithful, ie. different objects should have different zeta types. We introduce the nebula to measure just how faithful a symmetric shadow is. We also make central observations that can be used to compute the nebula, and show some of the interesting consequences of faithfulness. 
 
