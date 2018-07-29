@@ -159,6 +159,22 @@ We will now review some basic symmetric shadows.
   For $k$ a field of characteristic zero, we define the constant symmetric shadow $C_k$ as $(k, k, id)$, where the field receives a binomial $\lambda$-structure. We can see that it is faithful and has an image consisting of all the constant sequences.
 \end{definition}
 
+\begin{definition}
+  For any field $k$, we define the initial symmetric shadow $\Z_k$ as $(\Z, k, i)$, where $i$ is the embedding of $\Z$ in $k$ and $\Z$ has a binomial structure. This is faithful if and only if $k$ has characteristic zero, and otherwise has nebula $pZ$ where $p$ is the characteristic of $k$. The image is constant sequences of the integers (or their embedding in $k$). 
+\end{definition}
+
+\begin{proposition}
+  For any symmetric shadow $\Gamma$, there is a unique anchored morphism $\Z_\Gamma : \Z_k \to \Gamma$ defined by the embedding of the integers. However, there may be other unanchored morphisms.
+\end{proposition}
+
+\begin{proof}
+  Any anchored morphism must take the form $(f, id)$, and as $\Z$ is initial in $\lambda$-rings, $f$ must be the embedding $i$. 
+\end{proof}
+
+\begin{remark}
+  $\Z_k$ is clearly not initial in the category of symmetric shadows, but it is initial in the category of symmetric shadows over $k$ with anchored morphisms.
+\end{remark}
+
 \subsection{The Rational Shadow}
 
 \subsection{Tannakian Shadows}
