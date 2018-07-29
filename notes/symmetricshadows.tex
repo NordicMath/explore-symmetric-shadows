@@ -107,6 +107,7 @@ An ideal situation for zeta type formulas is that they should be faithful, ie. d
   \begin{enumerate}
     \item We have $N(\Gamma) \subseteq \ker \upsilon$. 
     \item $N(\Gamma)$ is the largest sub-ideal of $\ker \upsilon$ that is a $\lambda$-ideal. \todo{more precise notion of large}
+    \item From these two, $\Gamma$ is faithful if and only if there is no non-trivial $\lambda$-ideal contained in $\ker \upsilon$.
   \end{enumerate}
 \end{proposition}
 
@@ -115,6 +116,7 @@ An ideal situation for zeta type formulas is that they should be faithful, ie. d
   \begin{enumerate}
     \item It is clear that if $x \in N(\Gamma)$ then $\upsilon(\psi^1(x)) = 0$ and $x \in \ker \upsilon$.
     \item Notice that any element $x \in \ker \upsilon$ such that $\lambda^n(x) \notin \ker \upsilon$ with $n \ge 1$ would have a non-zero $\lambda$-shadow and hence not be in the nebula by definition, as all $\psi$-shadows must be zero. Similarly, if $\lambda^n(x) \in \ker \upsilon$ for all $n \ge 1$, then the $\lambda$-shadows are all zero, which imply that the $\psi$-shadows must likewise be zero. This reasoning \todo{Check this properly} uses \ref{prop:naturalCommutativity}.
+    \item Suppose there were such an ideal $I$. Then by (2), $N(\Gamma)$ may not be trivial, as $I$ is larger than the trivial ideal. Also, suppose there were no such ideal. Then by (1), $N(\Gamma)$ must be trivial and $\Gamma$ faithful. 
   \end{enumerate}
 \end{proof}
 
