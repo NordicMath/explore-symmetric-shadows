@@ -66,6 +66,21 @@ The notion of $f_\Gamma$ can be slightly cleaned up by defining morphisms betwee
   For each symmetric shadow $\Gamma = (R, k, \upsilon)$ there is an anchored umbral morphism $\Psi_{\Gamma} : \Gamma \to \Upsilon_k$. The symmetry part is defined by $f_\Gamma$. We call $\Psi_{\Gamma}(r)$ the $\psi$-shadows of $r$.
 \end{propdef}
 
+\begin{propdef} \label{propdef:upsilonUniversalDiagram}
+  For each morphism $\phi : \Gamma \to \Gamma'$ we get a commuting diagram:
+  \begin{center}
+    \begin{tikzcd}
+      \Gamma \arrow[d, "\Psi_\Gamma"] \arrow[r, "\phi"] & \Gamma' \arrow[d, "\Psi_{\Gamma'}"] \\
+      \Upsilon_k \arrow[r, "\Upsilon_{g}"] & \Upsilon_{k'}
+    \end{tikzcd}
+  \end{center}
+  where $g : k \to k'$ is the shadow part of $\phi$ and $\Upsilon_{g}$ is defined as the morphism induced from applying the $g$ to each point in the symmetry-realm of $\Upsilon_R$ and of course as well to its shadow domain.
+\end{propdef}
+
+\begin{proof}
+  Say $\phi = (f, g)$. We need to show that $\Upsilon_{g} \circ \Psi_\Gamma = \Psi_{\Gamma'} \circ \phi$. The shadow part is given by $g \circ id = id \circ g$, which is of course true, and the symmetric part is given by $g^{\N} \circ (r \mapsto k \mapsto \upsilon(\psi^k(r))) = (r \mapsto k \mapsto \upsilon'(\psi^k(r))) \circ f$. If we type this out using a single element $r$ and $k$, we get $g(\upsilon(\psi^k(r))) = \upsilon'(\psi^k(f(r)))) = \upsilon'(f(\psi^k(r)))$. This is true because $g(\upsilon(x)) = \upsilon'(f(x))$ is an axiom of umbral morphisms. \qedhere
+\end{proof}
+
 \subsection{The Nebula}
 An ideal situation for zeta type formulas is that they should be faithful, ie. different objects should have different zeta types. We introduce the nebula to measure just how faithful a symmetric shadow is. We also make central observations that can be used to compute the nebula, and show some of the interesting consequences of faithfulness. 
 
