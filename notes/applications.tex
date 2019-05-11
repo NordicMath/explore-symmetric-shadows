@@ -3,6 +3,33 @@
 We will now review some applications of the theory surrounding symmetric shadows.
 
 \subsection{Multiplicative Functions}
+Multiplicative functions are classically defined as functions $f : \N \to \C$ where $f(1) = 1$ and $f(ab) = f(a)f(b)$ whenever $a$ and $b$ are coprime. They are elementary building blocks of number theory, as they often manifest themselves as important numeric properties, such as greatest common divisor, the Euler totient function, or the M\"obius function. For a field $k$ we can define the set $Mult(k)$ of multiplicative functions $\N \to k$, where $k$ is usually $\C$ or $\Q$. 
+
+\begin{definition}
+  We define $Mult(k)$ as the set of functions $f : \N \to \C$ such that $f(1) = 1$ and $f(ab) = f(a)f(b)$ whenever $a$ and $b$ are coprime.
+\end{definition}
+
+\begin{propdef}
+  $Mult(k)$ is in bijection with $\Upsilon_{k^\mathbb{P}}$.
+\end{propdef}
+
+\begin{proof}
+  By \ref{???} multiplicative functions are determined by the Bell series for each prime. These series are then fed into the $\lambda$-shadows, which again are in bijection considered as elements of $k^{\mathbb{P} \times \N}$
+\end{proof}
+
+\begin{definition}
+  This bijection is used to enrich $Mult(k)$ with the symmetric shadow structure of $\Upsilon_{k^\mathbb{P}}$.
+\end{definition}
+
+\begin{theorem} We make the following observations describing the structure of $Mult(k)$
+  \begin{enumerate}
+    \item Addition in $Mult(k)$ corresponds to Dirichlet convolution, and negation to Dirichlet inverse.
+    \item Multiplication in $Mult(k)$ corresponds to function multiplication, whenever one of the factors is completely multiplicative. 
+    \item Give more general terms...
+    \item Adams operations in $Mult(k)$ are given by explicit formulas (TOOD: write down these), and the case of $\psi^2$, corresponds to the Norm of a multiplicative function.
+    \item The umbra is given by the values of the function at all primes.
+  \end{enumerate}
+\end{theorem}
 
 \subsection{Tannakian categories}
 
